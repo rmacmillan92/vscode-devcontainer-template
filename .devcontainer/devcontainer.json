@@ -6,6 +6,10 @@
 		"dockerfile": "Dockerfile"
 	}
 
+	"runArgs": [
+		"--name", "my-dev-container"
+	]
+
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
