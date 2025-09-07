@@ -4,11 +4,11 @@
 	"name": "C++",
 	"build": {
 		"dockerfile": "Dockerfile"
-	}
+	},
 
 	"runArgs": [
 		"--name", "my-dev-container"
-	]
+	],
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -20,7 +20,22 @@
 	// "postCreateCommand": "gcc -v",
 
 	// Configure tool-specific properties.
-	// "customizations": {},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools",
+				"ms-vscode.cpptools-extension-pack",
+				"ms-vscode.makefile-tools",
+				"ms-vscode.cmake-tools",
+				"ms-vscode-remote.remote-containers",
+				"github.copilot",
+				"github.copilot-chat",
+				"github.vscode-pull-request-github"
+			],
+			"settings": {
+			}
+		}
+	}
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
